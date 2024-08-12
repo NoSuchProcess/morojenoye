@@ -1,0 +1,16 @@
+[package]
+name = "morojenoye"
+description = """
+morojenoye
+"""
+version = "0.0.0"
+
+license = "Apache-2.0"
+edition = "2021"
+
+[[bin]]
+name = "morojenoye"
+path = "main.rs"
+
+[dependencies]
+riscv-rt = "0.12"

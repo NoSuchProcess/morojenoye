@@ -1,0 +1,6 @@
+[build]
+target = "riscv32i-unknown-none-elf"
+
+[target.riscv32i-unknown-none-elf]
+runner = "qemu-system-riscv32 -machine virt -cpu rv32 -m 8M -nographic -bios none -kernel"
+rustflags = ["-C", "link-arg=-Tmemory.x", "-C", "link-arg=-Tlink.x"]
