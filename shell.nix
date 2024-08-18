@@ -1,1 +1,4 @@
-{ pkgs ? import <nixpkgs> { } }: pkgs.mkShell { packages = [ ]; }
+{ pkgsRV ? import <nixpkgs> { crossSystem = "riscv64-linux"; }
+, pkgsHS ? import <nixpkgs> { } }:
+
+pkgsHS.mkShell { packages = [ pkgsRV.buildPackages.gcc ]; }
