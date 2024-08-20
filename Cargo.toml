@@ -1,1 +1,5 @@
-workspace = { members = ["morojenoye"], resolver = "2" }
+workspace = { members = [
+  "morojenoye",
+  "uboot-aarch64-rt",
+  "uboot-riscv64-rt",
+], resolver = "2" }
