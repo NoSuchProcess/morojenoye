@@ -82,6 +82,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "uboot-aarch64-rt"
+version = "0.0.0"
+
+[[package]]
+name = "uboot-riscv64-rt"
+version = "0.0.0"
+
+[[package]]
 name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
