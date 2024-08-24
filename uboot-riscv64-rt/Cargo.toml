@@ -11,3 +11,7 @@ license = "Apache-2.0"
 edition = "2021"
 
 [dependencies]
+riscv-rt = { git = "https://github.com/mekosko/riscv.git", features = [
+  "s-mode",
+  "u-boot",
+] }
