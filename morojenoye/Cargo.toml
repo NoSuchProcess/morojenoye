@@ -12,5 +12,5 @@ edition = "2021"
 name = "morojenoye"
 path = "main.rs"
 
-[target.'cfg(target_arch = "riscv64")'.dependencies]
-uboot-riscv64-rt = { path = "../uboot-riscv64-rt" }
+[dependencies]
+uboot-rt = { path = "../uboot-rt" }

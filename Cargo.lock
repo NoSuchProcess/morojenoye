@@ -12,7 +12,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 name = "morojenoye"
 version = "0.0.0"
 dependencies = [
- "uboot-riscv64-rt",
+ "uboot-rt",
 ]
 
 [[package]]
@@ -24,4 +24,12 @@ name = "uboot-riscv64-rt"
 version = "0.0.0"
 dependencies = [
  "cfg-if",
+]
+
+[[package]]
+name = "uboot-rt"
+version = "0.0.0"
+dependencies = [
+ "uboot-aarch64-rt",
+ "uboot-riscv64-rt",
 ]

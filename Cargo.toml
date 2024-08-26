@@ -1,5 +1,6 @@
 workspace = { members = [
+  "uboot-rt/uboot-aarch64-rt",
+  "uboot-rt/uboot-riscv64-rt",
   "morojenoye",
-  "uboot-aarch64-rt",
-  "uboot-riscv64-rt",
+  "uboot-rt",
 ], resolver = "2" }

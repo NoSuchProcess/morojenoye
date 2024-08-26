@@ -1,3 +1,5 @@
+build.target-dir = "qemu_rv64_virt/target"
+
 [target.riscv64gc-unknown-none-elf]
 rustflags = ["-C", "link-arg=-Tlayout.ld", "-C", "link-arg=-Tkernel.ld"]
-runner = "sh runner/qemu-system-riscv64-virt-uboot.sh"
+runner = "sh uboot-rt/uboot-riscv64-rt/qemu_rv64_virt/runner.sh"

@@ -1,0 +1,17 @@
+lib.path = "main.rs"
+
+[target.'cfg(target_arch = "aarch64")'.dependencies]
+uboot-aarch64-rt = { version = "0", path = "uboot-aarch64-rt" }
+
+[target.'cfg(target_arch = "riscv64")'.dependencies]
+uboot-riscv64-rt = { version = "0", path = "uboot-riscv64-rt" }
+
+[package]
+name = "uboot-rt"
+description = """
+uboot-rt
+"""
+version = "0.0.0"
+
+license = "Apache-2.0"
+edition = "2021"
